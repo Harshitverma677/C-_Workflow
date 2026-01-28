@@ -205,3 +205,92 @@ int main(){
 return 0;
 }*/
 
+/*#include<iostream>
+using namespace std;
+
+int main(){
+    int a[3][3]={1,2,3,4,5,6,7,8,9};
+    int b[3][3]={1,2,3,4,5,6,7,8,9};
+    int c[3][3];
+
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){                                                                          
+            c[i][j]=a[i][j]+b[i][j];
+        }
+    }                                                 
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            cout<<c[i][j];
+        }
+        cout<<endl;
+    }
+    return 0;
+}*/
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int r1,r2,c1,c2;
+    int i,j,k;
+    int sum;
+
+   cout<<"enter row1";
+   cin>>r1;
+
+   cout<<"enter col1";
+   cin>>c1;
+
+     int a[r1][c1];
+
+   cout<<"enter element of A";
+
+  for(i=0;i<r1;i++){
+    for(j=0;j<c1;j++){
+        cin>>a[i][j];
+    }
+  }
+
+  cout<<"enter row2";
+   cin>>r2;
+
+   cout<<"enter col2";
+   cin>>c2;
+
+   int b[r2][c2];
+
+   cout<<"enter element of B";
+
+  for(i=0;i<r2;i++){
+    for(j=0;j<c2;j++){
+        cin>>b[i][j];
+    }
+  }        
+                                                                                                    /*  1 2 4   4 5     4+12+4    5+14+8
+                                                                                                        3 5 4   6 7     12+30+4   15+35+8   
+                                                                                                                1 2                     */
+ int c[r1][c2]; 
+    if(c1==r2){                                                                                                    
+    for(i=0;i<r1;i++){
+        for(j=0;j<c2;j++){
+             sum=0;
+            for(k=0;k<c1;k++){
+
+                sum=sum+a[i][k]*b[k][j];
+                c[i][j]=sum;
+
+            }
+        }   
+    }
+     for(i=0;i<r1;i++){
+        for(j=0;j<c2;j++){
+            cout<<c[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+}
+else{
+    cout<<"mult can not possible";
+}
+    return 0;
+}
