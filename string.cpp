@@ -127,7 +127,7 @@ int main(){
     return 0;
 }*/
 
-#include<iostream>
+/*#include<iostream>
 #include<cstring>
 using namespace std;
 
@@ -148,7 +148,7 @@ int main(){
 
 
     return 0;
-}
+}*/
 
 
 /*#include<iostream>
@@ -198,3 +198,134 @@ cout<<"a3 is :"<<a3<<endl;
 
     return 0;
 }*/
+
+
+/*(basi function of string class)[if string s;]
+
+s.length()
+
+s.size()
+
+s.capacity()
+
+s.resize(n)
+
+s.max_size()
+
+s.clear()
+
+s.empty()
+
+s.append("new string to add")
+
+s.insert(index no,"string want to add at that index")
+{
+string s="hello";
+s.insert(3,"apple",2);
+
+output: helaplo  //here 2 means that 2 letters of apple will be taken
+}
+
+s.replace()
+
+s.erase()
+
+s.push_back('z')
+
+s.pop_back()
+
+s1.swap(s2)
+
+s.copy(char des[])
+
+s.find(str) or char
+
+s.rfind(str) or char
+
+s.find_first_of()
+                  // in these both we can also add starting index like string s="hello world"; s.find_first_of('l',3); it will start checking from 3 index
+s.find_last_of()
+
+*/
+
+/*#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main(){
+    string s;
+
+    
+
+    s.resize(50);
+   
+    cout<<s.capacity();
+
+    return 0;
+}*/
+
+/*#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	string a,b;
+    char temp;
+    
+    cin>>a>>b;
+    
+    cout<<a.length()<<" "<<b.length()<<endl;
+    cout<<a+b<<endl;
+    temp=a[0];
+    a[0]=b[0];
+    b[0]=temp;
+  
+    cout<<a<<" "<<b;
+    return 0;
+}*/
+
+/*#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+    string s="programming";
+                                  //here 7 is used bcz we want to replace 7 letters with "amer" from index 4
+    s.replace(4,7,"amer");
+    cout<<s;
+
+    return 0;
+}*/
+
+/*#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+    string s1="AAA";
+    string s2="BBB";
+
+                                 
+   s1.swap(s2);
+    cout<<s1<<" "<<s2;
+
+    return 0;
+
+}*/
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+    string s="Hello world";
+    
+
+                                 
+ cout<<s.find_last_of('l',5);
+
+    return 0;
+
+}
+ 
