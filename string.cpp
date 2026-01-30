@@ -200,7 +200,7 @@ cout<<"a3 is :"<<a3<<endl;
 }*/
 
 
-/*(basi function of string class)[if string s;]
+/*(basic bfunction of string class)[if string s;]
 
 s.length()
 
@@ -245,6 +245,34 @@ s.rfind(str) or char
 s.find_first_of()
                   // in these both we can also add starting index like string s="hello world"; s.find_first_of('l',3); it will start checking from 3 index
 s.find_last_of()
+
+s.substr(start,number)
+
+s.compare(str)
+
+// some operators of class string
+
+at()
+
+[]
+
+front()
+
+back() 
+
+//string Iterator
+
+string::iterator it;
+
+begin()
+
+end()
+
+string::reverse_iterator it;
+
+rbegin()
+
+rend()
 
 */
 
@@ -314,18 +342,84 @@ int main(){
 
 }*/
 
-#include<iostream>
+/*#include<iostream>
 #include<string>
 using namespace std;
 
 int main(){
-    string s="Hello world";
-    
+  string s="harshit";
 
-                                 
- cout<<s.find_last_of('l',5);
+  string::iterator i;
 
+  for(i=s.begin();i!=s.end();i++){
+    cout<<*i;
+  }
+ 
     return 0;
 
-}
+}*/ 
  
+/*#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+    string s="Harshit";
+
+    for(int i=s[0];s[i]!='\0';i++){
+        cout<<s;
+    }
+
+    return 0;
+}*/
+
+/*#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main(){
+    string s="haRshI0t5";
+   
+
+    for(int i=0;s[i]!='\0';i++){
+        if(s[i]>90){
+            s[i]=s[i]-32;
+        }
+        
+    }
+   cout<<s;
+    return 0;
+}*/
+
+#include<iostream>
+#include<string>
+
+using namespace std;
+int main(){
+ string s="Hey how are you";
+
+
+ int vowels=0,consonants=0,spaces=0,space=0;
+for(int i=0;s[i]!='\0';i++){
+    if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'||
+       s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U'){
+        vowels++;
+    }
+     else if(s[i]==' ' && s[i+1]!=' '){
+        spaces++;
+    }
+
+    else if(s[i]!=' '){                                             
+        consonants++;
+    }
+   
+    
+}
+
+cout<<"vowels : "<<vowels<<endl;
+cout<<"consonants : "<<consonants<<endl;
+cout<<"words : "<<spaces+1<<endl;
+
+return 0;
+}
