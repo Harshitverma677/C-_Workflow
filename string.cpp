@@ -357,7 +357,7 @@ int main(){
  
     return 0;
 
-}*/ 
+} */
  
 /*#include<iostream>
 #include<string>
@@ -392,7 +392,7 @@ int main(){
     return 0;
 }*/
 
-#include<iostream>
+/*#include<iostream>
 #include<string>
 
 using namespace std;
@@ -400,7 +400,7 @@ int main(){
  string s="Hey how are you";
 
 
- int vowels=0,consonants=0,spaces=0,space=0;
+ int vowels=0,consonants=0,spaces=0;
 for(int i=0;s[i]!='\0';i++){
     if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'||
        s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U'){
@@ -422,4 +422,68 @@ cout<<"consonants : "<<consonants<<endl;
 cout<<"words : "<<spaces+1<<endl;
 
 return 0;
+}*/
+
+/*#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main(){
+
+    string s="harshit";
+    string r;
+
+    int len=s.length();
+
+    r.resize(len);
+
+    for(int i=0,j=len-1;i<len;i++,j--){
+        r[j]=s[i];
+    }
+    r[len]='\0';
+
+    if(r.compare(s)==0){
+        cout<<"palindrome";
+    }
+    else{
+        cout<<"not palindrome";
+    }
+
+    return 0;
+}*/
+
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main(){
+
+    string s="NItiN";
+    string r;
+
+    int len=s.length();
+
+    r.resize(len);
+
+    for(int i=0;s[i]!='\0';i++){
+        if(s[i]>65 && s[i]<90){
+            s[i]=s[i]+32;
+        }
+    }
+
+    for(int i=0,j=len-1;i<len;i++,j--){
+        r[j]=s[i];
+    }
+    r[len]='\0';
+
+    if(r.compare(s)==0){
+        cout<<"palindrome"<<" "<<r;
+    }
+    else{
+        cout<<"not palindrome"<<" "<<r;
+    }
+
+    return 0;
 }
