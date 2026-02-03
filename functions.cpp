@@ -76,7 +76,7 @@ ex-> a>b?a:b; it means that if a>b ? then print a : otherwise b;  (? -> ternary 
 
 */
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 template<class T>
@@ -88,8 +88,124 @@ int main(){
     cout<<maxim(10.5f,5.4f)<<endl;
     
     return 0;
-}
+}*/
 
 /*default argument== declaring same value to the the variable 
 for ex -> int add(int x,int y,int z=0)
 {we assign a value to the z which can be change by calling this function}*/
+
+/*perimeter passing 
+
+1. call by value
+2. call by address
+3. call by reference
+
+*/
+/*
+//call by value method
+#include<iostream>
+using namespace std;
+
+int swap(int a,int b){
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+}
+int main(){
+    int x=10,y=20;
+    swap(x,y);
+    cout<<x<<" "<<y;
+
+    return 0;
+}
+*/
+
+//call by address method
+
+/*#include<iostream>
+using namespace std;
+
+int swap(int *a,int *b){
+    int temp;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+}
+int main(){
+    int x=10,y=20;
+    swap(&x,&y);
+    cout<<x<<" "<<y;
+
+    return 0;
+}*/
+
+//call by reference
+
+/*#include<iostream>
+using namespace std;
+
+int swap(int &a,int &b){
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+}
+int main(){
+    int x=10,y=20;
+    swap(x,y);
+    cout<<x<<" "<<y;
+
+    return 0;
+}*/
+
+/*#include<iostream>
+using namespace std;
+
+int * fun(){
+    int *p=new int[5];
+    for(int i=0;i<5;i++){
+        p[i]=5*i;
+    }                                  //return by address
+    return p;
+}
+int main(){
+    int *q=fun();
+    for(int i=0;i<5;i++){
+        cout<<q[i]<<endl;
+    }
+    return 0;
+}*/
+
+/*#include<iostream>
+using namespace std;
+
+int & fun(int &a){
+cout<<a;
+return a;
+
+}
+int main(){
+    int x=10;                     //return by refernece
+    fun(x)=25;
+    cout<<x;
+    
+    return 0;
+}*/
+
+#include<iostream>
+using namespace std;
+
+int a=0;
+
+int fun(){
+int x=10;
+a=a+x;
+
+}
+int main(){
+   fun();
+   cout<<a;
+    
+    return 0;
+}
