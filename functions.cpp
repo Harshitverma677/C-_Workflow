@@ -1,0 +1,95 @@
+/*#include<iostream>
+using namespace std;
+
+int add(int x,int y){
+int z;
+z=x+y;
+return z;
+
+}
+int main(){
+    int a,b,c;
+    cin>>a>>b;
+    c=add(a,b);
+
+    cout<<"sum is "<<c;
+
+    return 0;
+}*/
+
+/*#include<iostream>
+using namespace std;
+
+int greatest(int x,int y,int z){
+
+    if(x>y){
+        if(x>z){
+            return x;
+        }
+        else{
+            return z;
+        }
+    }
+    else if(y>x){
+        if(y>z){
+            return y;
+        }
+        else{
+            return z;                                           
+        }
+    }
+}
+int main(){
+    int x=15,y=40,z=30;
+
+    cout<<"greater number is "<<greatest(x,y,z);                    
+
+    return 0;
+}*/
+
+/*#include<iostream> 
+using namespace std;
+
+
+int pow(int x,int y){
+    int mul=1;
+    for(int i=0;i<y;i++){
+        mul=mul*x;
+    }
+    return mul;
+
+}
+int main(){
+    int x=2,y=3;
+    cout<<pow(x,y);
+    return 0;
+}*/
+
+/*Function overloading means calling same name function of different
+ argument list in c++ it is possible to have same name function of differnet argument list*/ 
+
+//Template function means it can convert many functions of different datatype into one function  [template<class T>]
+
+/* for finding greater number we can also use for 
+
+ex-> a>b?a:b; it means that if a>b ? then print a : otherwise b;  (? -> ternary operator )
+
+*/
+
+#include<iostream>
+using namespace std;
+
+template<class T>
+T maxim(T a,T b){
+    return a>b?a:b;
+}
+int main(){
+    cout<<maxim(10,5)<<endl;
+    cout<<maxim(10.5f,5.4f)<<endl;
+    
+    return 0;
+}
+
+/*default argument== declaring same value to the the variable 
+for ex -> int add(int x,int y,int z=0)
+{we assign a value to the z which can be change by calling this function}*/
