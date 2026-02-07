@@ -473,3 +473,25 @@ int main(){
   return 0;
 }*/
 
+#include<iostream>
+using namespace std;
+
+int main(){
+  int n=7,r;
+  int sum=0;
+
+   while(n!=1 && n>9){
+         r=n%10;
+        sum=sum+r*r;
+        n=n/10;
+       }
+
+       if(n==1){
+        cout<<"happy number";
+       }
+       else{
+        cout<<"not";
+       }
+
+return 0;
+}

@@ -384,7 +384,7 @@ int main(){
 
     for(int i=0;s[i]!='\0';i++){
         if(s[i]>90){
-            s[i]=s[i]-32;
+            s[i]=s[i]+32;
         }
         
     }
@@ -528,7 +528,7 @@ int main(){
 return 0;
 }*/
 
-#include<iostream>
+/*#include<iostream>
 #include<string>
 using namespace std;
 
@@ -543,5 +543,5 @@ cout<<"Hello ! : "<<s;
 
 return 0;
 
-}
+}*/
 

@@ -324,3 +324,57 @@ int main(){
   cout<<"Netsalary is "<<Netsalary;
   return 0;
 }*/
+
+/*#include<iostream>
+using namespace std;
+
+int main(){
+    int n=68,r,sum=0;
+    while(n!=1 && n!=4){
+        sum=0;
+    while(n>0){
+
+        r=n%10;
+        sum=sum+r*r;
+        n=n/10;
+    }
+    n=sum;
+}
+if(n==1){
+    cout<<"happy number";
+}
+else{
+    cout<<"not";
+}
+return 0;  
+}*/
+
+/*#include<iostream>
+using namespace std;
+
+int main(){
+  int n=6,True=0,False=0;
+
+
+  for(int i=1;i<=15;i++){
+
+    if(i==1){
+      True++;
+
+    if(n%2||3||5==0){
+      True++;
+
+    if(n%i!=2||3||5==0){
+
+      False++;
+    }
+    }
+    else{
+      False++;
+    }
+   
+   }
+  }
+  cout<<True<<" "<<False;
+  return 0;
+}*/

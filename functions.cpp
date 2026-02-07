@@ -193,7 +193,7 @@ int main(){
     return 0;
 }*/
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 int a=0;
@@ -207,5 +207,92 @@ int main(){
    fun();
    cout<<a;
     
+    return 0;
+}*/
+
+/*#include<iostream>
+using namespace std;
+
+
+void fun(int n){
+    if(n>0){
+        cout<<n<<endl;
+        fun(n-1);
+    }
+
+}
+int main(){
+int x=5;
+fun(x);
+
+return 0;
+}*/
+
+/*#include<iostream>
+using namespace std;
+
+int fact=1;
+
+int fun(int n){
+
+    
+    while(n>0){
+        fact=fact*n;
+        fun(n-1);
+         cout<<fact;
+    }
+   
+}
+int main(){
+    int x;
+    cout<<"enter a number ";
+    cin>>x;
+    fun(x);
+   
+
+    return 0;
+}*/
+
+/*#include<iostream>
+using namespace std;
+
+int search(int A[],int n,int key){
+
+    for(int i=0;i<n;i++){
+        if(A[i]==key){
+            return i;
+        }
+       return -1;
+    }
+
+}
+
+int main(){
+    int arr[5]={1,2,3,4,5};
+    int key;
+
+    cout<<"enter element for search";
+    cin>>key;
+
+    int index=search(arr,5,key);
+
+    cout<<index;
+
+return 0;
+}*/
+
+#include<iostream>
+using namespace std;
+
+int max(int a,int b){
+    return a>b?a:b;
+}
+
+int main(){
+    int (*fp)(int, int);
+    fp=max;
+    cout<<(*fp)(10,5);
+
+
     return 0;
 }
