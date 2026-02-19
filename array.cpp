@@ -227,7 +227,7 @@ int main(){
     return 0;
 }*/
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 int main(){
@@ -269,7 +269,7 @@ int main(){
                                                                                                     /*  1 2 4   4 5     4+12+4    5+14+8
                                                                                                         3 5 4   6 7     12+30+4   15+35+8   
                                                                                                                 1 2                     */
- int c[r1][c2]; 
+ /*int c[r1][c2]; 
     if(c1==r2){                                                                                                    
     for(i=0;i<r1;i++){
         for(j=0;j<c2;j++){
@@ -293,4 +293,37 @@ else{
     cout<<"mult can not possible";
 }
     return 0;
+}*/
+
+/*#include<iostream>
+using namespace std;
+
+int main(){
+    int n=10,m=3;
+    int num1[n];
+    int num2[n];
+
+    for(int i=1,j=0;i<n;i++,j++){
+        if(i%m==0){
+           num1[j]=i; 
+        }
+        else{
+            num2[j]=i;
+        }
+    }
+    
+    return 0;
+}*/
+
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main(){
+    vector<int> array(4,0);
+
+
+    int sum=0;
+    for(int i=0;i<)
 }

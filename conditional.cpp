@@ -473,7 +473,7 @@ int main(){
   return 0;
 }*/
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 int main(){
@@ -494,4 +494,20 @@ int main(){
        }
 
 return 0;
+}
+*/
+#include<iostream>
+using namespace std;
+
+int main(){
+  int a=-10,b=-2;
+int count=0;
+int c=b;
+  while(-b<=-a){
+    b+=c;
+    count++;
+  }
+  cout<<count;
+
+  return 0;
 }

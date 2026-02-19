@@ -378,3 +378,23 @@ int main(){
   cout<<True<<" "<<False;
   return 0;
 }*/
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main(){
+  int n=5;
+  vector<int> a(n);
+  int start=0;
+  int bit=0;
+
+  for(int i=0;i<n;i++){
+    a[i]=start+2*i;
+
+    bit=bit^a[i];
+  }
+  cout<<bit;
+
+  return 0;
+}

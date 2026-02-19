@@ -347,7 +347,7 @@ int main(){
 using namespace std;
 
 int main(){
-  string s="harshit";
+  string s="harshit verma";
 
   string::iterator i;
 
@@ -357,7 +357,7 @@ int main(){
  
     return 0;
 
-} */
+}*/
  
 /*#include<iostream>
 #include<string>
@@ -545,3 +545,51 @@ return 0;
 
 }*/
 
+/*#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+    string s="harshit verma";
+
+    string::iterator i;
+
+    for(i=s.begin();i)
+}*/
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+    string start="RXXLRXRXL";
+    string result="XRLXXRRLX";
+    string step="";
+    int count=0;
+
+     for(int i=0;start[i]<=start.length()-1;i++){
+        if(start[i]=='X' && start[i+1]=='L'){
+        step+="LX";
+        i++;
+        }
+        else if(start[i]=='R' && start[i+1]=='X'){
+            i++;
+            if(count<=2){
+            step+="XR";
+            i++;
+            count++;
+            }
+        
+        }
+        else{
+        step+=start[i]; 
+        }                                                                  //"XRLXXRXR"
+       }
+       if(step==result)
+       cout<<"true";
+       else
+       cout<<step;
+
+       return 0;
+    
+}
